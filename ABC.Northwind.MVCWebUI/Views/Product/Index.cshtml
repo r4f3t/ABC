@@ -1,0 +1,16 @@
+﻿@model ABC.Northwind.MVCWebUI.Models.ProductListViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    @foreach (var item in Model.Products)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+        </tr>
+    }
+</table>
+
